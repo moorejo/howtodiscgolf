@@ -5,137 +5,38 @@
     <script type="text/javascript" src="inc/jquery.mobile-1.4.4.min.js"></script>
    	<script type="text/javascript" src="inc/global.js"></script>
     <link rel="stylesheet" type="text/css" href="inc/jquery.mobile-1.4.4.min.css" />
-    <link href = "index.css" rel = "stylesheet" type = "test/css"/>
+   
 </head>
 
 <body>
-<!--                                      Login                                      -->
+<!-- home page -->
 <div data-role="page" id="index">
-    <div data-role="header">
-        <h1> Login </h1>
-    </div>
-	<div>
-        <input type="text" placeholder="Username" id="indexUsername" />
-        <input type="password" placeholder="Password" id="indexPassword" />
-        <button id="indexLogin">Login</button>
-        <div id="incorrect">
-        </div>
-    </div>
+  <div data-role="header">
+    <h1>How To Disc Golf</h1>
+  </div>
+  
+  
+<div id="nav">
+		  <fieldset class="ui-grid-a">
+			  <div class="ui-block-a"><button type="submit" data-theme="a" >Home</button></div>
+			  <div class="ui-block-b"><button type="submit" data-theme="a" id="rulesbtn">Rules</button></div>
+		</fieldset>
+</div>
 
 </div>
-<!--                                      Home                                      -->
-<div data-role="page" id="home">
-    <div data-role="header">
-     	<h1> PSR Data Tracker </h1>
-    </div>
-    <div>   
-            <button id="studentsbtn" type="button">Students</button>
-            <button id="reportbtn">Report</button>
-            <button id="settingsbtn" type="button">Settings</button>
-            <button id="logout" type="button">Logout</button>
-	</div>
-</div>
-<!--                                      Students                                      -->
-<div data-role="page" id="students">
-    <div data-role="header">
-        <a href="startUp.html" data-icon="back" data-rel="back"> Back </a>
-        <h1> Students </h1>
-    </div>
-    <div>
-    	<button id="newStudentsbtn" type="button">Add Student</button>
-    	<ul data-role="listview" data-autodividers="true" data-inset="true">
-  		</ul>
-    </div>
-</div>
-<!--                                      New Students                                      -->
-<div data-role="page" id="newStudents">
-    <div data-role="header">
-        <a href="startUp.html" data-icon="back" data-rel="back"> Back </a>
-    	<h1> Student Info </h1>
-	</div>
-    <div>    
-        <input type="text" placeholder="Student Name" id="studentName" />
-        <input type="text" placeholder="School" id="school" />
-        <input type="text" placeholder="Grade" id="grade" />
-	</div>        
-    
-    
-    <div>   
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period One" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Two" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Three" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Four" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Five" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Six" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Seven" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        
-        <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><input type="text" data-theme="c" placeholder="Period Eight" /></div>
-            <div class="ui-block-b"><button type="goal" data-theme="b" onClick="window.location.href='#'">Goal</button></div>
-        </fieldset>
-        </div>
-    
-	<div class="ui-grid-solo">
-		<div class="ui-block-a"><button type="v" data-theme="b">Save</button></div>
-	</div>
-</div>
-<!--                                      Settings                                      -->
-<div data-role="page" id="settings">
-    <div data-role="header">
-	    <a href="startUp.html" data-icon="back" data-rel="back"> Back </a>
-    	<h1> Settings </h1>
-    </div>
-    
-    	<div>
-	    	<button id="changePassword">Change Password</button>
-        </div>
-</div>
-<!--                                      Change Password                                      -->
-<div data-role="page" id="passwordChange">
-        <div data-role="header">
-        <a href="Settings.html" data-icon="back" data-rel="back"> Back </a>
-        <h1> Change Password </h1>
-        </div>
-		
-			<input type="text" placeholder="User Name" id="userNameinput" />
-			<input type="password" placeholder="Password" id="passwordinput" />
-			<input type="password" placeholder="New Password" id="newPassword" />
-			<input type="password" placeholder="Confirm Password" id="confirmPassword" />
-            <div id="incorrectb"></div>
-            <fieldset class="ui-grid-a">
-                <div class="ui-block-a"><button type="submit" id="savechange" data-theme="c"> Save </button></div>
-                <div class="ui-block-b"><button type="reset" id="cancelchange" data-theme="b">Cancel</button></div>
-			</fieldset>
 
-	
-		</div>
+<!-- Rules page -->
+  
+ <div data-role="page" id="rules">
+  <div data-role="header">
+		<a href="startUp.html" data-icon="back" data-rel="back"> Back </a>
+    <h1>Rules</h1>
+  </div> 
+  
+<p> It worked you got the page to change </p>
+
+</div>
+
 
 
 
